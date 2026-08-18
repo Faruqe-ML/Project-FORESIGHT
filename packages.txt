@@ -1,0 +1,8 @@
+# packages.txt - System dependencies for Streamlit Cloud
+# Required for Prophet and TensorFlow
+
+build-essential
+gcc
+g++
+make
+python3-dev

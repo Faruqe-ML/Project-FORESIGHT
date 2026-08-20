@@ -1,6 +1,17 @@
-import api
+﻿import importlib
+import glob
 
-sales = api.get_sales()
+files = glob.glob("app_pages/*.py") + glob.glob("utility/*.py")
 
-print("SALES DATA:", type(sales))
-print(sales)
+for file in files:
+    module = file[:-3].replace("\\", ".").replace("/", ".")
+
+    if module.endswith(".__init__"):
+        continue
+
+    try:
+        importlib.import_module(module)
+        print("✅", module)
+    except Exception as e:
+        print("❌", module)
+        print("   ", type(e).__name__, ":", e)

@@ -30,7 +30,10 @@ def get_daily_sales():
         DATASET_DIR / "daily_sale.csv"
     )
 
-    # Clean column names
+    print("DAILY SALES FILE:", DATASET_DIR / "daily_sale.csv")
+    print("DAILY SALES SHAPE:", df.shape)
+    print("DAILY SALES COLUMNS:", df.columns.tolist())
+
     df.columns = (
         df.columns
         .str.strip()
@@ -38,7 +41,6 @@ def get_daily_sales():
     )
 
     return df
-
 
 @st.cache_data(ttl=3600)
 def get_stores():

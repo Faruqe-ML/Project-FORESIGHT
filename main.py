@@ -15,7 +15,7 @@ except Exception as e:
     st.error(f"❌ category_performance: {e}")
 
 try:
-    from app_pages.executive_dashboard import show_executive
+    from app_pages.executive_dashboard import show_executive_dashboard
     st.write("✅ executive")
 except Exception as e:
     st.error(f"❌ executive: {e}")

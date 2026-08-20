@@ -205,7 +205,7 @@ def get_sales_summary():
 def get_skus():
 
     df =  pd.read_csv(
-        r"D:\Dataset\Internship\skus.csv"
+        r"dataset\skus.csv"
     )
 
     df.columns = (

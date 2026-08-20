@@ -9,7 +9,8 @@ scipy
 joblib
 xgboost
 lightgbm
-prophet
+prophet==1.1.5
+tensorflow==2.12.0
 openpyxl
 pyarrow
 requests

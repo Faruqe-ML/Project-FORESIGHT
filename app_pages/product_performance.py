@@ -269,9 +269,9 @@ def show_product_performance():
     fig4 = create_top_units_chart(daily_sales, top_n=10)
     st.plotly_chart(fig4, use_container_width=True)
 
-    fig5 = create_category_performance_chart(daily_sales)
-    st.plotly_chart(fig5, use_container_width=True)
-
+    # fig5 = create_category_performance_chart(daily_sales)
+    # st.plotly_chart(fig5, use_container_width=True)
+    #
 
 
 

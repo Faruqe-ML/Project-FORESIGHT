@@ -651,7 +651,7 @@ def create_category_performance_chart(daily_sales):
     """
     Category Performance: Units vs Revenue
     """
-    st.write(daily_sales.columns)
+
     # -----------------------------------------
     # Validate dataframe
     # -----------------------------------------

@@ -18,7 +18,7 @@ import pandas as pd
 def get_daily_sales():
 
     df = pd.read_csv(
-        "dataset\daily_sale.csv"
+        r"dataset\daily_sale.csv"
     )
 
     # Clean column names
@@ -34,7 +34,7 @@ def get_daily_sales():
 def get_stores():
 
     df = pd.read_csv(
-        "dataset\store.csv"
+        r"dataset\store.csv"
     )
 
     # Clean column names
@@ -51,7 +51,7 @@ def get_stores():
 def get_inventary():
 
     df =  pd.read_csv(
-        "dataset\inventory.csv"
+        r"dataset\inventory.csv"
     )
     df.columns = (
         df.columns
@@ -64,7 +64,7 @@ def get_inventary():
 def get_customer():
 
     df =  pd.read_csv(
-        "dataset\customer.csv"
+        r"dataset\customer.csv"
     )
     df.columns = (
         df.columns
@@ -143,7 +143,7 @@ def get_customer_summary() -> dict:
 def get_promotion():
 
    df =  pd.read_csv(
-        "dataset\promotions.csv"
+        r"dataset\promotions.csv"
     )
    df.columns = (
        df.columns
